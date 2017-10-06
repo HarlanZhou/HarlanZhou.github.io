@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+
+    
+  <url>
+    <loc>http://harlanzhou.co/2017/10/05/how-to-create/</loc>
+    <lastmod>2017-10-05T13:24:15.527Z</lastmod>
+    <data>
+        <display>
+        <title>如何用Hexo搭建Github博客</title>
+        <pubTime>2017-10-05T08:39:03.669Z</pubTime>
+        
+        <tag>Github</tag>
+         
+         
+           
+             
+              <breadCrumb title="搭建博客" url="http://harlanzhou.co/categories/%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+    
+    
+  <url>
+    <loc>http://harlanzhou.co/2017/10/03/hello-world/</loc>
+    <lastmod>2017-10-04T14:53:23.014Z</lastmod>
+    <data>
+        <display>
+        <title>这是我的第一篇Github Blog</title>
+        <pubTime>2017-10-03T11:53:29.759Z</pubTime>
+        
+         
+           
+        </display>
+    </data>
+    </url>
+
+</urlset>
