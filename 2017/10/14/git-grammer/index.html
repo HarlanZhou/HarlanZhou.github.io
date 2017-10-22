@@ -89,7 +89,7 @@
 <meta property="og:site_name" content="Harlanzhou&#39;s blog">
 <meta property="og:description" content="GitGit基本语法 $ git init 将当前的目录变成Git可以管理的仓库 $ ls -ah显示当前目录下的所有文件包括隐藏文件 $ git add readme.txt 将readme.txt 添加到仓库 $ git commit -m &amp;quot;wrote a readme file&amp;quot; 将文件提交到仓库 并添加本次提交的说明  版本回退*$ git status 查看仓库当前">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2017-10-14T11:59:25.448Z">
+<meta property="og:updated_time" content="2017-10-15T01:46:13.139Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Git使用手册">
 <meta name="twitter:description" content="GitGit基本语法 $ git init 将当前的目录变成Git可以管理的仓库 $ ls -ah显示当前目录下的所有文件包括隐藏文件 $ git add readme.txt 将readme.txt 添加到仓库 $ git commit -m &amp;quot;wrote a readme file&amp;quot; 将文件提交到仓库 并添加本次提交的说明  版本回退*$ git status 查看仓库当前">
@@ -390,6 +390,14 @@
 <li>回到之前的那个版本也就是未被修改的 找到之前bash 窗口中的git log 第一个版本的信息的乱七八糟的数字字母 <code>$ git reset --hard 你的版本码</code></li>
 <li><font color="#fff0000">如果关掉电脑重启怎么办?</font><br><code>$ git reflog</code> 查看历史命令</li>
 </ul>
+<h2 id="说明"><a href="#说明" class="headerlink" title="说明"></a>说明</h2><ul>
+<li>git管理的是<strong>修改</strong>并非<strong>文件</strong>，因此每次的修改都必须先<code>add</code>再<code>commit</code>,<code>add</code>到暂存区的才能被git提交</li>
+<li>撤销修改</li>
+</ul>
+<ol>
+<li>在未<code>add</code>前使用<code>git check -- file</code>让<code>file</code>回到最近的一次<code>git commit</code> 或者<code>git add</code>时的状态(丢弃工作区的修改)</li>
+<li><code>add</code>之后使用<code>git reset HEAD file</code>将暂存区的修改回退到工作区再使用<code>git checkout -- file</code>回退 –</li>
+</ol>
 
       
     </div>
@@ -429,6 +437,10 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2017/10/21/sort-analysis/" rel="prev" title="排序算法分析">
+                排序算法分析 <i class="fa fa-chevron-right"></i>
+              </a>
             
           </div>
         </div>
@@ -511,7 +523,7 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">3</span>
+                  <span class="site-state-item-count">4</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
@@ -522,7 +534,7 @@
               
               <div class="site-state-item site-state-categories">
                 <a href="/categories/index.html">
-                  <span class="site-state-item-count">2</span>
+                  <span class="site-state-item-count">3</span>
                   <span class="site-state-item-name">分类</span>
                 </a>
               </div>
@@ -533,7 +545,7 @@
               
               <div class="site-state-item site-state-tags">
                 <a href="/tags/index.html">
-                  <span class="site-state-item-count">2</span>
+                  <span class="site-state-item-count">3</span>
                   <span class="site-state-item-name">标签</span>
                 </a>
               </div>
@@ -582,7 +594,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Git"><span class="nav-number">1.</span> <span class="nav-text">Git</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#Git基本语法"><span class="nav-number">1.1.</span> <span class="nav-text">Git基本语法</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#版本回退"><span class="nav-number">1.2.</span> <span class="nav-text">版本回退</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Git"><span class="nav-number">1.</span> <span class="nav-text">Git</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#Git基本语法"><span class="nav-number">1.1.</span> <span class="nav-text">Git基本语法</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#版本回退"><span class="nav-number">1.2.</span> <span class="nav-text">版本回退</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#说明"><span class="nav-number">1.3.</span> <span class="nav-text">说明</span></a></li></ol></li></ol></div>
             
 
           </div>
