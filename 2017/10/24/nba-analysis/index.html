@@ -89,6 +89,8 @@
 <meta property="og:site_name" content="Harlanzhou&#39;s blog">
 <meta property="og:description" content="pandas分析NBA2017-2018赛季球员球队数据 进入 NBA中国官方网站:http://china.nba.com/playerindex/通过浏览器操作检查 -&amp;gt; Network -&amp;gt; F5 双击json的文件进入链接地址 http://china.nba.com/static/data/league/playerlist.json现在的格式显示不利于查看,请安装 JSON">
 <meta property="og:locale" content="zh-Hans">
+<meta property="og:image" content="http://oybx1cer1.bkt.clouddn.com/head.PNG">
+<meta property="og:image" content="http://oybx1cer1.bkt.clouddn.com/tail.PNG">
 <meta property="og:image" content="http://oybx1cer1.bkt.clouddn.com/allContinentPeople.PNG">
 <meta property="og:image" content="http://oybx1cer1.bkt.clouddn.com/allContientPlayerBar.PNG">
 <meta property="og:image" content="http://oybx1cer1.bkt.clouddn.com/position.PNG">
@@ -96,11 +98,11 @@
 <meta property="og:image" content="http://oybx1cer1.bkt.clouddn.com/%E5%B9%B4%E4%BB%BD.PNG">
 <meta property="og:image" content="http://oybx1cer1.bkt.clouddn.com/player.PNG">
 <meta property="og:image" content="http://oybx1cer1.bkt.clouddn.com/timg.jpg">
-<meta property="og:updated_time" content="2017-10-24T13:39:35.626Z">
+<meta property="og:updated_time" content="2017-10-24T13:42:54.660Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="pandas分析NBA2017-2018赛季球员球队数据">
 <meta name="twitter:description" content="pandas分析NBA2017-2018赛季球员球队数据 进入 NBA中国官方网站:http://china.nba.com/playerindex/通过浏览器操作检查 -&amp;gt; Network -&amp;gt; F5 双击json的文件进入链接地址 http://china.nba.com/static/data/league/playerlist.json现在的格式显示不利于查看,请安装 JSON">
-<meta name="twitter:image" content="http://oybx1cer1.bkt.clouddn.com/allContinentPeople.PNG">
+<meta name="twitter:image" content="http://oybx1cer1.bkt.clouddn.com/head.PNG">
 
 
 
@@ -392,7 +394,7 @@
 <li><p>将数据读入</p>
 <figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line"><span class="comment"># -*-coding:utf-8-*-</span></div><div class="line"><span class="keyword">import</span> numpy <span class="keyword">as</span> np</div><div class="line"><span class="keyword">import</span> pandas <span class="keyword">as</span> pd</div><div class="line"><span class="keyword">import</span> matplotlib.pyplot <span class="keyword">as</span> plt</div><div class="line"></div><div class="line">player = pd.read_csv(<span class="string">"nba_player.csv"</span>) <span class="comment"># 读入球员基本信息</span></div><div class="line">playerstatic = pd.read_csv(<span class="string">"nba_player_static.csv"</span>) <span class="comment"># 读入球员的数据信息</span></div></pre></td></tr></table></figure>
 </li>
-<li><p>球员头信息尾信息<br>  <code>player.head()</code>前五条记录<br>  (<a href="http://oybx1cer1.bkt.clouddn.com/head.PNG" target="_blank" rel="external">http://oybx1cer1.bkt.clouddn.com/head.PNG</a>)<br>  <code>player.tail()</code>后五条记录<br>  (<a href="http://oybx1cer1.bkt.clouddn.com/tail.PNG" target="_blank" rel="external">http://oybx1cer1.bkt.clouddn.com/tail.PNG</a>)</p>
+<li><p>球员头信息尾信息<br>  <code>player.head()</code>前五条记录<br>  <img src="http://oybx1cer1.bkt.clouddn.com/head.PNG" alt=""><br>  <code>player.tail()</code>后五条记录<br>  <img src="http://oybx1cer1.bkt.clouddn.com/tail.PNG" alt=""></p>
 </li>
 <li><p>球员各个国家统计<br><code>player[&#39;country&#39;].value.counts()</code><br><a href="http://oybx1cer1.bkt.clouddn.com/country.PNG" target="_blank" rel="external">http://oybx1cer1.bkt.clouddn.com/country.PNG</a></p>
 </li>
