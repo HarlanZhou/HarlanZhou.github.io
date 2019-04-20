@@ -4,8 +4,28 @@
 
     
   <url>
+    <loc>http://harlanzhou.co/2019/04/20/test/</loc>
+    <lastmod>2019-04-20T02:45:07.834Z</lastmod>
+    <data>
+        <display>
+        <title>测试文件</title>
+        <pubTime>2019-04-20T02:38:25.285Z</pubTime>
+        
+        <tag>BME</tag>
+         
+         
+           
+             
+              <breadCrumb title="BME" url="http://harlanzhou.co/categories/BME/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>http://harlanzhou.co/2017/10/24/nba-analysis/</loc>
-    <lastmod>2017-10-24T13:45:12.595Z</lastmod>
+    <lastmod>2017-10-30T11:05:32.651Z</lastmod>
     <data>
         <display>
         <title>pandas分析NBA2017-2018赛季球员球队数据</title>
