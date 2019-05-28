@@ -266,7 +266,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://harlanzhou.co/2019/04/20/test/">
+    <link itemprop="mainEntityOfPage" href="http://harlanzhou.co/2019/04/23/fMRI_study1/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Harlan Zhou">
@@ -285,7 +285,206 @@
         
           <h2 class="post-title" itemprop="name headline">
                 
-                <a class="post-title-link" href="/2019/04/20/test/" itemprop="url">测试文件</a></h2>
+                <a class="post-title-link" href="/2019/04/23/fMRI_study1/" itemprop="url">SPM12学习2</a></h2>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-04-23T20:30:10+08:00">
+                2019-04-23
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/BME/" itemprop="url" rel="index">
+                    <span itemprop="name">BME</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+              <span class="post-comments-count">
+              <span class="post-meta-divider">|</span>
+              <span class="post-meta-item-icon">
+                <i class="fa fa-comment-o"></i>
+              </span>
+              
+                <a href="/2019/04/23/fMRI_study1/#SOHUCS" itemprop="discussionUrl">
+                  <span id="url::http://harlanzhou.co/2019/04/23/fMRI_study1/" class="cy_cmt_count" data-xid="2019/04/23/fMRI_study1/" itemprop="commentsCount" ></span>
+                </a>
+              
+            
+          
+
+          
+          
+             <span id="/2019/04/23/fMRI_study1/" class="leancloud_visitors" data-flag-title="SPM12学习2">
+               <span class="post-meta-divider">|</span>
+               <span class="post-meta-item-icon">
+                 <i class="fa fa-eye"></i>
+               </span>
+               
+                 <span class="post-meta-item-text">阅读次数&#58;</span>
+               
+                 <span class="leancloud-visitors-count"></span>
+             </span>
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h1 id="SPM12学习2"><a href="#SPM12学习2" class="headerlink" title="SPM12学习2"></a>SPM12学习2</h1><hr>
+<h2 id="概念"><a href="#概念" class="headerlink" title="概念"></a>概念</h2><ol>
+<li>TR: 重复时间即，脉冲序列<strong>执行</strong>所需的时间</li>
+<li>TA: 采集时间也称<strong>扫描时间</strong>，即整个脉冲序列完成信号采集所需要的时间</li>
+<li>图像配准：Image registration，将不同时间、不同传感器或不同条件下获取的两幅图或者多幅图像进行匹配、叠加的过程</li>
+<li>QSM: 磁共振采集得到的磁敏感定量图像（Quantitative Susceptibility Mapping）</li>
+<li>傅里叶变换：任何连续周期信号可以由一组适当的正弦曲线组合而成</li>
+<li>hippocampal atrophy：海马体萎缩</li>
+<li>functional connectivity:简称FC</li>
+<li>MMSE??????</li>
+<li>independent component analysis:简称ICA即独立成分分析法，用于发现存在于随机变量下的隐性因素</li>
+<li>clustering coefficient：集聚系数</li>
+<li>dual regression: 二元回归</li>
+<li>AUC：全称area under the curve，是机器学习的评估指标用来评估二分类模型的性能指标</li>
+<li>ALFF：全称amplitude of low frequency fluctuations即低频震荡振幅算法</li>
+<li>default mode network:静息状态默认脑活动网络</li>
+<li>time course VS time series:查询<a href="https://www.biostars.org/p/158802/" target="_blank" rel="external">链接</a>“time course experiment data series.”太长，所以简写为”time series data”</li>
+<li>sliding windows approach: “a-brute-force search over pose space with fixed model to find object”暴力搜索</li>
+<li>confidence map:置信图</li>
+<li>k-means clustering：k均值聚类</li>
+<li>Manhattan Distance:曼哈顿距离，两点在南北方向上的距离加上在东西方向上的距离，即d（i，j）=|xi-xj|+|yi-yj|</li>
+<li>FSL：FMRIB Software Library(FSL) 以下来自<a href="https://fsl.fmrib.ox.ac.uk/fsl/fslwiki/官网介绍，FSL是一个用于分析fMRI、MRI、DTI(弥散张量成像)的综合库工具。" target="_blank" rel="external">https://fsl.fmrib.ox.ac.uk/fsl/fslwiki/官网介绍，FSL是一个用于分析fMRI、MRI、DTI(弥散张量成像)的综合库工具。</a></li>
+<li>cross validation:交叉验证，用于评估模型。可以用来解决<strong>过拟合</strong>。<strong>如何解决呢？</strong>在训练集的基础上划分出<strong>新的训练集</strong>与<strong>验证集</strong>，<strong>新</strong>训练集训练模型，在<strong>验证集</strong>测试模型，<strong>不断调整</strong>初始模型（超参数等），使得训练得到的模型在验证集上的表现最好，最后放到测试集上得到这个最优模型的评估结果。模型的表现过分依赖于验证集的划分，可能使某些特殊样本被划入验证集，导致模型的表现出现异常（偏好或偏差）。而且训练集划了一部分给验证集后，训练模型能得到的数据就变少了，也会影响训练效果。因为通常来说，训练数据越多，越能反映出数据的真实分布，模型训练的效果就越好，越可能得到无偏估计。</li>
+<li>nested cross validation:嵌套交叉验证，这样可以使模型在全部数据上进行测试，能更好的说明模型的泛化能力<h2 id="matlab操作"><a href="#matlab操作" class="headerlink" title="matlab操作"></a>matlab操作</h2><pre><code class="matlab">
+</code></pre>
+</li>
+</ol>
+<h2 id="界面中的参数"><a href="#界面中的参数" class="headerlink" title="界面中的参数"></a>界面中的参数</h2><ul>
+<li>Realign:Estimate </li>
+</ul>
+<ol>
+<li>通过使用最小二乘法和6个刚体变换对同一对象的时间序列图像就行重新整合</li>
+<li>通过user指定序列中的具体图像作为第一张图像，之后的<strong>所有</strong>扫描子序列能够被重新组合</li>
+<li>质量与重新组合的速度的权衡，Separation此参数以毫米为单位，表示对参考图像文件进行重采样时采样点之间的间隔，采样距离越小，得到的结果越精确，但是运行速度越慢</li>
+<li>FWHM称为脉冲的半高宽度，高斯平滑的FWHM被用于评估图像的重排参数之前</li>
+</ol>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://harlanzhou.co/2019/04/20/fMRI_study/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Harlan Zhou">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/uploads/avatar.png">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Harlanzhou's blog">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h2 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2019/04/20/fMRI_study/" itemprop="url">SPM12学习手册</a></h2>
         
 
         <div class="post-meta">
@@ -339,8 +538,8 @@
                 <i class="fa fa-comment-o"></i>
               </span>
               
-                <a href="/2019/04/20/test/#SOHUCS" itemprop="discussionUrl">
-                  <span id="url::http://harlanzhou.co/2019/04/20/test/" class="cy_cmt_count" data-xid="2019/04/20/test/" itemprop="commentsCount" ></span>
+                <a href="/2019/04/20/fMRI_study/#SOHUCS" itemprop="discussionUrl">
+                  <span id="url::http://harlanzhou.co/2019/04/20/fMRI_study/" class="cy_cmt_count" data-xid="2019/04/20/fMRI_study/" itemprop="commentsCount" ></span>
                 </a>
               
             
@@ -348,7 +547,7 @@
 
           
           
-             <span id="/2019/04/20/test/" class="leancloud_visitors" data-flag-title="测试文件">
+             <span id="/2019/04/20/fMRI_study/" class="leancloud_visitors" data-flag-title="SPM12学习手册">
                <span class="post-meta-divider">|</span>
                <span class="post-meta-item-icon">
                  <i class="fa fa-eye"></i>
@@ -381,8 +580,10 @@
       
         
           
-            <h1 id="测试文件"><a href="#测试文件" class="headerlink" title="测试文件"></a>测试文件</h1><hr>
-<p>这是一个测试文件</p>
+            <h1 id="SPM12学习手册"><a href="#SPM12学习手册" class="headerlink" title="SPM12学习手册"></a>SPM12学习手册</h1><hr>
+<p><strong>如何打开SPM界面</strong><br>进入matlab之后<br><figure class="highlight matlab"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">&gt;&gt; addpath spm存储路径</div></pre></td></tr></table></figure></p>
+<h2 id="官方数据的获取"><a href="#官方数据的获取" class="headerlink" title="官方数据的获取"></a>官方数据的获取</h2><p>登陆spm的<a href="https://www.fil.ion.ucl.ac.uk/spm/data/" target="_blank" rel="external">官网</a>选择左侧导航栏的<strong>Data Sets</strong>，右侧页面选择title为<strong>fMEI:epoch</strong>模块下的<em>**</em></p>
+<h2 id="数据的获取"><a href="#数据的获取" class="headerlink" title="数据的获取"></a>数据的获取</h2><p>输入网址<a href="https://openfmri.org" target="_blank" rel="external">获取免费的数据库</a>openfmri.org</p>
 
           
         
@@ -1423,7 +1624,7 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">6</span>
+                  <span class="site-state-item-count">7</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>

@@ -4,11 +4,31 @@
 
     
   <url>
-    <loc>http://harlanzhou.co/2019/04/20/test/</loc>
-    <lastmod>2019-04-20T02:45:07.834Z</lastmod>
+    <loc>http://harlanzhou.co/2019/04/23/fMRI_study1/</loc>
+    <lastmod>2019-05-15T15:20:31.303Z</lastmod>
     <data>
         <display>
-        <title>测试文件</title>
+        <title>SPM12学习2</title>
+        <pubTime>2019-04-23T12:30:10.195Z</pubTime>
+        
+        <tag>BME</tag>
+         
+         
+           
+             
+              <breadCrumb title="BME" url="http://harlanzhou.co/categories/BME/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://harlanzhou.co/2019/04/20/fMRI_study/</loc>
+    <lastmod>2019-04-21T01:56:04.298Z</lastmod>
+    <data>
+        <display>
+        <title>SPM12学习手册</title>
         <pubTime>2019-04-20T02:38:25.285Z</pubTime>
         
         <tag>BME</tag>
