@@ -91,7 +91,7 @@
 <meta property="og:site_name" content="Harlanzhou&#39;s blog">
 <meta property="og:description" content="SPM12学习2 概念 TR: 重复时间即，脉冲序列执行所需的时间 TA: 采集时间也称扫描时间，即整个脉冲序列完成信号采集所需要的时间 图像配准：Image registration，将不同时间、不同传感器或不同条件下获取的两幅图或者多幅图像进行匹配、叠加的过程 QSM: 磁共振采集得到的磁敏感定量图像（Quantitative Susceptibility Mapping） 傅里叶变换：任何连">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2019-05-15T15:20:31.303Z">
+<meta property="og:updated_time" content="2019-06-05T13:47:14.772Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="SPM12学习2">
 <meta name="twitter:description" content="SPM12学习2 概念 TR: 重复时间即，脉冲序列执行所需的时间 TA: 采集时间也称扫描时间，即整个脉冲序列完成信号采集所需要的时间 图像配准：Image registration，将不同时间、不同传感器或不同条件下获取的两幅图或者多幅图像进行匹配、叠加的过程 QSM: 磁共振采集得到的磁敏感定量图像（Quantitative Susceptibility Mapping） 傅里叶变换：任何连">
@@ -401,11 +401,17 @@
 <li>Manhattan Distance:曼哈顿距离，两点在南北方向上的距离加上在东西方向上的距离，即d（i，j）=|xi-xj|+|yi-yj|</li>
 <li>FSL：FMRIB Software Library(FSL) 以下来自<a href="https://fsl.fmrib.ox.ac.uk/fsl/fslwiki/官网介绍，FSL是一个用于分析fMRI、MRI、DTI(弥散张量成像)的综合库工具。" target="_blank" rel="external">https://fsl.fmrib.ox.ac.uk/fsl/fslwiki/官网介绍，FSL是一个用于分析fMRI、MRI、DTI(弥散张量成像)的综合库工具。</a></li>
 <li>cross validation:交叉验证，用于评估模型。可以用来解决<strong>过拟合</strong>。<strong>如何解决呢？</strong>在训练集的基础上划分出<strong>新的训练集</strong>与<strong>验证集</strong>，<strong>新</strong>训练集训练模型，在<strong>验证集</strong>测试模型，<strong>不断调整</strong>初始模型（超参数等），使得训练得到的模型在验证集上的表现最好，最后放到测试集上得到这个最优模型的评估结果。模型的表现过分依赖于验证集的划分，可能使某些特殊样本被划入验证集，导致模型的表现出现异常（偏好或偏差）。而且训练集划了一部分给验证集后，训练模型能得到的数据就变少了，也会影响训练效果。因为通常来说，训练数据越多，越能反映出数据的真实分布，模型训练的效果就越好，越可能得到无偏估计。</li>
-<li>nested cross validation:嵌套交叉验证，这样可以使模型在全部数据上进行测试，能更好的说明模型的泛化能力<h2 id="matlab操作"><a href="#matlab操作" class="headerlink" title="matlab操作"></a>matlab操作</h2><pre><code class="matlab">
+<li>nested cross validation:嵌套交叉验证，这样可以使模型在全部数据上进行测试，能更好的说明模型的泛化能力</li>
+<li>T-statistic,Z-statistic:T统计量，Z统计量<h2 id="matlab操作"><a href="#matlab操作" class="headerlink" title="matlab操作"></a>matlab操作</h2><pre><code class="matlab">
 </code></pre>
 </li>
 </ol>
-<h2 id="界面中的参数"><a href="#界面中的参数" class="headerlink" title="界面中的参数"></a>界面中的参数</h2><ul>
+<h3 id="BOLD-fMRI成像基础"><a href="#BOLD-fMRI成像基础" class="headerlink" title="BOLD-fMRI成像基础"></a>BOLD-fMRI成像基础</h3><ul>
+<li>局部神经元活动–&gt;代谢需求增加–&gt;局部脑血流增大</li>
+<li>脱氧血红蛋白是顺磁性物质–&gt;脱氧血红蛋白减少–&gt;T<sub>2</sub>加权BOLD信号强度增加</li>
+<li><strong>血红蛋白</strong>可作为对比增强剂，当神经元处于活动–&gt;顺磁性脱氧血红蛋白减少</li>
+</ul>
+<h3 id="BOLD-fMRI数据分析基础"><a href="#BOLD-fMRI数据分析基础" class="headerlink" title="BOLD-fMRI数据分析基础"></a>BOLD-fMRI数据分析基础</h3><h2 id="界面中的参数"><a href="#界面中的参数" class="headerlink" title="界面中的参数"></a>界面中的参数</h2><ul>
 <li>Realign:Estimate </li>
 </ul>
 <ol>
@@ -444,8 +450,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2019/04/20/fMRI_study/" rel="next" title="SPM12学习手册">
-                <i class="fa fa-chevron-left"></i> SPM12学习手册
+              <a href="/2019/04/20/fMRI_study/" rel="next" title="SPM12学习">
+                <i class="fa fa-chevron-left"></i> SPM12学习
               </a>
             
           </div>
@@ -453,6 +459,10 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2019/06/05/Linux/" rel="prev" title="Linux学习记录">
+                Linux学习记录 <i class="fa fa-chevron-right"></i>
+              </a>
             
           </div>
         </div>
@@ -535,7 +545,7 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">7</span>
+                  <span class="site-state-item-count">8</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
@@ -546,7 +556,7 @@
               
               <div class="site-state-item site-state-categories">
                 <a href="/categories/index.html">
-                  <span class="site-state-item-count">5</span>
+                  <span class="site-state-item-count">6</span>
                   <span class="site-state-item-name">分类</span>
                 </a>
               </div>
@@ -557,7 +567,7 @@
               
               <div class="site-state-item site-state-tags">
                 <a href="/tags/index.html">
-                  <span class="site-state-item-count">6</span>
+                  <span class="site-state-item-count">7</span>
                   <span class="site-state-item-name">标签</span>
                 </a>
               </div>
@@ -606,7 +616,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#SPM12学习2"><span class="nav-number">1.</span> <span class="nav-text">SPM12学习2</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#概念"><span class="nav-number">1.1.</span> <span class="nav-text">概念</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#matlab操作"><span class="nav-number">1.2.</span> <span class="nav-text">matlab操作</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#界面中的参数"><span class="nav-number">1.3.</span> <span class="nav-text">界面中的参数</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#SPM12学习2"><span class="nav-number">1.</span> <span class="nav-text">SPM12学习2</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#概念"><span class="nav-number">1.1.</span> <span class="nav-text">概念</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#matlab操作"><span class="nav-number">1.2.</span> <span class="nav-text">matlab操作</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#BOLD-fMRI成像基础"><span class="nav-number">1.2.1.</span> <span class="nav-text">BOLD-fMRI成像基础</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#BOLD-fMRI数据分析基础"><span class="nav-number">1.2.2.</span> <span class="nav-text">BOLD-fMRI数据分析基础</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#界面中的参数"><span class="nav-number">1.3.</span> <span class="nav-text">界面中的参数</span></a></li></ol></li></ol></div>
             
 
           </div>

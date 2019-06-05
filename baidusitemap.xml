@@ -4,12 +4,12 @@
 
     
   <url>
-    <loc>http://harlanzhou.co/2019/04/23/fMRI_study1/</loc>
-    <lastmod>2019-05-15T15:20:31.303Z</lastmod>
+    <loc>http://harlanzhou.co/2019/04/20/fMRI_study/</loc>
+    <lastmod>2019-06-05T13:47:26.212Z</lastmod>
     <data>
         <display>
-        <title>SPM12学习2</title>
-        <pubTime>2019-04-23T12:30:10.195Z</pubTime>
+        <title>SPM12学习</title>
+        <pubTime>2019-04-20T02:38:25.285Z</pubTime>
         
         <tag>BME</tag>
          
@@ -24,12 +24,32 @@
 
     
   <url>
-    <loc>http://harlanzhou.co/2019/04/20/fMRI_study/</loc>
-    <lastmod>2019-04-21T01:56:04.298Z</lastmod>
+    <loc>http://harlanzhou.co/2019/06/05/Linux/</loc>
+    <lastmod>2019-06-05T13:47:23.619Z</lastmod>
     <data>
         <display>
-        <title>SPM12学习手册</title>
-        <pubTime>2019-04-20T02:38:25.285Z</pubTime>
+        <title>Linux学习记录</title>
+        <pubTime>2019-06-05T13:47:23.509Z</pubTime>
+        
+        <tag>Linux</tag>
+         
+         
+           
+             
+              <breadCrumb title="操作系统" url="http://harlanzhou.co/categories/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://harlanzhou.co/2019/04/23/fMRI_study1/</loc>
+    <lastmod>2019-06-05T13:47:14.772Z</lastmod>
+    <data>
+        <display>
+        <title>SPM12学习2</title>
+        <pubTime>2019-04-23T12:30:10.195Z</pubTime>
         
         <tag>BME</tag>
          
